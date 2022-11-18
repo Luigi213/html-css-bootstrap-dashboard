@@ -110,9 +110,17 @@ header{
         width: 100%;
     }
 
+    .bg-lightgrey{
+        background-color: rgba(0, 0, 0, 0.2 );
+    }
+
+    .border-white{
+        border-color: white;
+    }
+
 /* end main */
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:992px){
     /* main */
 
 

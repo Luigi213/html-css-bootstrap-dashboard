@@ -91,23 +91,100 @@
             </div>
             <!-- content-main -->
             <div class="content-container">
-                <div class="topbar">
+                <div class="topbar py-4">
                     <div class="container-fluid">
                         <div class="row flex-column flex-md-row">
-                            <div class="col-6 order-2 order-md-1">
-                                <div class="text-white">
-                                    <h1>Boolean</h1>
+                            <div class="col-12 col-md-4 col-lg-5 order-2 order-md-1">
+                                <div class="text-white mb-3">
+                                    <div>
+                                        <span class="fs-2">Boolean</span>
+                                        <span class="badge bg-lightgrey">Piano blaze</span>    
+                                    </div>
+                                    <span class="badge bg-lightgrey">3 app</span>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <span class="badge bg-lightgrey d-inline-block d-lg-none"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="badge bg-lightgrey d-none d-lg-inline-block">Boolean mobile app</span>
+                                    <span class="badge bg-lightgrey d-none d-lg-inline-block">Boolean mobile app</span>
+                                    <span class="badge bg-lightgrey d-none d-lg-inline-block">Boolean mobile app</span>
                                 </div>
                             </div>
-                            <div class="col-4 order-3 order-md-2">
-                                <div class="text-white">
+                            <div class="col-12 col-md-4 col-lg-4 order-3 order-md-2">
+                                <div class="text-white ps-lg-5">
                                     <span>Studenti online negli ultimi 30 minuti</span>                                                              
-                                    <h1>125</h1>
+                                    <h1 class="mt-2">125</h1>
                                 </div>
                             </div>
-                            <div class="col-2 order-1 order-md-3">
-                                <div class="text-white">
-                                    Nuovo Studente
+                            <div class="col-12 col-md-4 col-lg-3 order-1 order-md-3">
+                                <div class="text-white mb-3 ps-lg-5">
+                                    <span class="me-2">Nuovo Studente</span>                                                                                                     
+                                    <button class="btn text-white border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title text-black" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <form class="row g-3 needs-validation" novalidate>
+                                                <div class="col-md-6">
+                                                    <label for="validationCustom01" class="form-label text-black">Nome</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="validationCustom02" class="form-label text-black">Cognome</label>
+                                                    <input type="text" class="form-control" id="validationCustom02" required>                         
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="validationCustomUsername" class="form-label text-black">Email</label>
+                                                    <div class="input-group has-validation">
+                                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                        <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="validationCustom03" class="form-label text-black">Password</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" required>                                    
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="validationCustom03" class="form-label text-black">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" required>                                    
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="validationCustom03" class="form-label text-black">Città</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" required>                                    
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="validationCustom04" class="form-label text-black">Stato</label>
+                                                    <select class="form-select" id="validationCustom04" required>
+                                                        <option selected disabled value="">Choose...</option>
+                                                        <option>...</option>
+                                                    </select>                                    
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="validationCustom03" class="form-label text-black">CAP</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" required>                                    
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <label class="input-group-text" for="inputGroupFile01">Scegli file</label>
+                                                    <input  class="form-control" id="inputGroupFile01" value="Nessun file selezionato">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label text-black" for="invalidCheck">
+                                                        Seleziona per proseguire
+                                                        </label>                                    
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="btn btn-primary" type="submit">Salva</button>
+                                                    <button class="btn btn-warning" type="submit">Svuota</button>
+                                                </div>
+                                              </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
