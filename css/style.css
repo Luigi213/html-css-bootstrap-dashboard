@@ -118,7 +118,24 @@ header{
         border-color: white;
     }
 
+    .avatar{
+        background-image: url(../img/class-avatar.jpg);
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    .space-table{
+        width: 20%;
+    }
+
 /* end main */
+
+@media screen and (min-width:768px){
+    .space-table{
+        width: 50%;
+    }
+}
 
 @media screen and (min-width:992px){
     /* main */
