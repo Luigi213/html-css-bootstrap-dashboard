@@ -3,3 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #F8F9FA;
+}
+
+/* header */
+
+.bg-grey{
+    background-color: #e9ecef
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.mobile-logo img{
+    height: 50px;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.wi-88{
+    width: 88%;
+}
+
+.form
+
+.dropdown-menu[data-bs-popper]{
+    transform: translateX(-80%);
+}
+
+.border-right{
+    border-right: transparent ;
+}
+
+.border-left{
+    border-left: transparent;
+}
