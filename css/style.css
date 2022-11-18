@@ -10,6 +10,16 @@ body{
 
 /* header */
 
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #F8F9FA;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
 .bg-grey{
     background-color: #e9ecef
 }
@@ -34,7 +44,9 @@ body{
     width: 88%;
 }
 
-.form
+#display-wrap{
+    flex-wrap:unset;
+}
 
 .dropdown-menu[data-bs-popper]{
     transform: translateX(-80%);
@@ -46,4 +58,47 @@ body{
 
 .border-left{
     border-left: transparent;
+}
+
+/* main */
+
+    main{
+        padding-top: 82px;
+    }
+
+    /* sidebar */
+
+    .container-sidebar{
+        background-color: #051E34;
+        height: calc(100vh - 82px);
+        width: 70px;
+    }
+
+    /* content main */
+
+    .content-container{
+        width: calc(100vw - 70px);
+        height: calc(100vh - 82px);
+        overflow: auto;
+    }
+
+    .topbar{
+        background-color: #1B72E8;
+        width: 100%;
+    }
+
+/* end main */
+
+@media screen and (min-width:1200px){
+    /* sidebar */
+
+    .container-sidebar{
+        width: 145px;
+    }
+
+    /* content */
+
+    .content-container{
+        width: calc(100vw - 145px);
+    }
 }
