@@ -123,6 +123,10 @@ header{
         border-color: white;
     }
 
+    .offcanvas{
+        --bs-offcanvas-width: 100%;
+    }
+
     /* first card */
 
     .avatar{
@@ -170,5 +174,9 @@ header{
 
     .content-container{
         width: calc(100vw - 145px);
+    }
+
+    .offcanvas{
+        --bs-offcanvas-width: 50%;
     }
 }
